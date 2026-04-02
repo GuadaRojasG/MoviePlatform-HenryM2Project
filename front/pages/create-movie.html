@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/form.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Cinema - Create movie</title>
+</head>
+<body>
+  <main>
+    <nav>
+      <a href="../index.html">
+        <img src="../assets/logo.png" class="logo">
+      </a>
+      <a class="menu-item" href="../index.html">Home</a>
+      <a class="menu-item" href="./movies.html">Recommended</a>
+      <a class="menu-item" href="./actors.html">Actors</a>
+      <a class="selected" class="menu-item" href="./create-movie.html">Create</a>
+      <img class="login" src="../assets/login.png">
+    </nav>
+
+    <section class="secciones">
+      <article>
+        <form id="createMovieForm">
+          <label>TITLE:</label>
+          <input type="text" name="title" required>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label>YEAR:</label>
+              <input class="year" type="number" max="2025" name="year" required>
+            </div>
+
+            <div class="form-group">
+              <label>RATING:</label>
+              <input type="number" max="10" name="rate" required>
+            </div>
+          </div>
+
+
+          <label>DIRECTOR:</label>
+          <input type="text" name="director" required>
+
+          <label>DURATION:</label>
+          <input type="text" name="duration" required>
+
+          <label>GENRE:</label>
+          <div class="grid">
+            <label class="form-check d-flex align-items-center gap-2 m-0">
+              <input class="form-check-input mt-0" type="checkbox" value="action">
+              Action
+            </label>
+
+            <label class="form-check d-flex align-items-center gap-2 m-0">
+              <input class="form-check-input mt-0" type="checkbox" value="adventure">
+              Adventure
+            </label>
+
+            <label class="form-check d-flex align-items-center gap-2 m-0">
+              <input class="form-check-input mt-0" type="checkbox" value="drama">
+              Drama
+            </label>
+
+            <label class="form-check d-flex align-items-center gap-2 m-0">
+              <input class="form-check-input mt-0" type="checkbox" value="romance">
+              Romance
+            </label>
+
+            <label class="form-check d-flex align-items-center gap-2 m-0">
+              <input class="form-check-input mt-0" type="checkbox" value="sci-fi">
+              Sci-Fi
+            </label>
+
+            <label class="form-check d-flex align-items-center gap-2 m-0">
+              <input class="form-check-input mt-0" type="checkbox" value="horror">
+              Horror
+            </label>
+          </div>
+          
+
+          <label>POSTER URL:</label>
+          <input type="url" name="poster" required>
+
+          <div class="button-group">
+            <button type="submit">SEND</button>
+            <button type="reset">CLEAR</button>
+          </div>
+          
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <script type="module" src="../public/bundle.js"></script>
+</body>
+</html>

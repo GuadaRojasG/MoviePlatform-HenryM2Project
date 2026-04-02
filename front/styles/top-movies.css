@@ -1,0 +1,21 @@
+.movies-section {
+    flex-direction: column;
+}
+
+.movie-container {
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    margin: 0 10em 0 10em;
+    gap: 6em;
+}
+
+.movie {
+    gap: 1em;
+}
+
+.side-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}

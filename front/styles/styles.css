@@ -1,0 +1,107 @@
+body {
+    background-color: #FAFAFA;
+    color: #312F2C;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;   
+    padding: 1em 1.5em 1em 1.5em;
+    background-color: #312F2C;
+    color: #FAFAFA;
+    z-index: 999;
+}
+
+.menu-item {
+    transition: 0.3s;
+    border-radius: 1em;
+    padding: 1em 1.2em 1em 1.2em;
+}
+
+.menu-item:hover {
+    background-color: #F5EEDF;
+    color: #312F2C;
+}
+
+.selected {
+    background-color: #C84C4C;
+    color: #FAFAFA;
+    border-radius: 1em;
+    padding: 0.8em 1.2em 0.8em 1.2em;
+}
+
+.selected:hover {
+    background-color: #A73E3E;
+    color: #FAFAFA;
+}
+
+.logo {
+    height: 4.5em;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: rotate(-3deg);
+}
+
+.login {
+    height: 3em;
+    width: 2em;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.login:hover {
+    filter: brightness(60%);
+}
+
+.movies-display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 por fila */
+    gap: 2em;
+    padding: 2em 4em 4em 4em;
+}
+
+.movie {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.movie-poster {
+    height: 450px;
+    object-fit: cover;
+    transition: 0.3s;
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.15);
+}
+
+.movie-poster:hover {
+    transform: scale(1.025);
+}
+
+.title {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+.watch-button {
+    background-color: #C84C4C;
+    border-radius: 1em;
+    font-weight: 600;
+    padding: 0.2em 0.6em 0.2em 0.6em;
+    margin-top: auto;
+    color: #FAFAFA;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.watch-button:hover {
+    background-color: #8F3434;
+    color: #FAFAFA;
+}

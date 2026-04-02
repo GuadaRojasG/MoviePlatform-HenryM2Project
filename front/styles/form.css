@@ -1,0 +1,69 @@
+.secciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 30em 2em 30em;
+    padding: 2em;
+    background-color: #F5EEDF;
+    border-radius: 30px;
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.15);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2em;
+    font-weight: 500;
+}
+
+input {
+    border-radius: 10px;
+    height: 2.5em;
+    width: 25em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem 2rem; /* filas / columnas */
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* dos columnas iguales */
+    gap: 1.5em
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group > input {
+    width: 11.7em;
+    margin-top: 1.2em;
+}
+
+button {
+    align-self: center;
+    border-radius: 10px;
+    background-color: #C84C4C;
+    color: aliceblue;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 4em;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #A73E3E;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
