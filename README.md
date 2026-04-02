@@ -51,7 +51,7 @@ Cinema App allows users to browse, create and manage movies and actors through a
 ## 📁 Project Structure
 
 ```
-PM2-GuadaRojasG/
+MoviePlatform-HenryM2Project/
 ├── back/
 │   ├── index.js
 │   ├── src/
@@ -96,8 +96,8 @@ PM2-GuadaRojasG/
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/PM2-GuadaRojasG.git
-cd PM2-GuadaRojasG
+git clone https://github.com/GuadaRojasG/MoviePlatform-HenryM2Project.git
+cd MoviePlatform-HenryM2Project
 ```
 
 2. **Setup Backend**
